@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	max-width: 100%;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -68,7 +69,7 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body{
-	margin: 45px;
+	margin: 7%;
 }
 
 /* header style */
@@ -105,14 +106,14 @@ section.start{
 }
 
 div.innovation h1{
-	font-size: 4rem;
+	font-size: 350%;
 }
 button{
 	background-color: white;
 	border: 1px solid black;
 	font: inherit;
 	padding: 3px 30px;
-	margin: 25px;
+	margin: 7%;
 }
 /* end header style */
 
@@ -123,12 +124,11 @@ section.overview{
 .topSection{
 	display: flex;
 	justify-content: space-between;
-	padding: 30px 0 0 0;
 }
 
 img.middle-img, .services-header-img{
 	width:100%;
-	margin: 30px 0;
+	margin: 5% 0;
 }
 
 div.bottomSection{
@@ -171,10 +171,6 @@ span.phone-email{
 
 .container{
 	max-width: 1000px;
-}
-
-.services{
-	margin: 0 0 30px 0;
 }
 
 .services h1{
@@ -256,5 +252,27 @@ div.fact-image{
 }
 
 @media (max-width:500px){
-	
+	.nav{
+		display: flex;
+		flex-flow: column;
+		height: 35vh;
+	}
+	nav a{
+		width: 100%;
+		height: 15vh;
+		align-items: center;
+		border-bottom: 1px solid darkgrey;
+		border-top: 1px solid darkgrey;
+	}
+	.topSection{
+		display: flex;
+		flex-direction: column;
+	}
+	.bottomSection{
+		display: flex;
+		flex-direction: column;
+	}
+	h2{
+		margin-top: 7%;
+	}
 }
